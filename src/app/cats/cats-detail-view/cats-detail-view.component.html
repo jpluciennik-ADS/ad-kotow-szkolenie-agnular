@@ -5,6 +5,10 @@
             <span class="cats-name">{{cat.name}}</span>
             <span>{{cat.ageMonths}} miesięcy</span>
             <span>{{cat.breed}}</span>
+            <span>szczepienie:
+                <span *ngIf="cat.vaccinated">&#10003;</span> 
+                <span *ngIf="!cat.vaccinated">&#10007;</span> 
+            </span>
         </div>
     </div>
 

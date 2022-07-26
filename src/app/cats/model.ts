@@ -4,6 +4,7 @@ export interface Cat {
   breed: string;
   picUrl: string;
   vaccinated: boolean;
+  funfact: string;
 }
 
 export interface AdoptionData {

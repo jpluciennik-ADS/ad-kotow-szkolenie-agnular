@@ -9,13 +9,19 @@ import { CatsDetailViewComponent } from './cats/cats-detail-view/cats-detail-vie
 import { CatsAdoptionFormComponent } from './cats/cats-adoption-form/cats-adoption-form.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import 'hammerjs';
+
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatTooltipModule
   ],
   declarations: [
     AppComponent,

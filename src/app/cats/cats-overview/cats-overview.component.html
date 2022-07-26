@@ -1,6 +1,7 @@
 <section>
     <div class="listElement" *ngFor="let cat of cats">
-        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)">
+        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)" title="{{cat.funfact}}">
+        <!-- <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)" matTooltip="{{cat.funfact}}" matTooltipPosition='right'> -->
         <span>{{cat.name}}</span>
     </div>
 </section>

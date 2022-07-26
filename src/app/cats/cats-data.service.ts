@@ -14,35 +14,40 @@ export class CatsDataService {
       ageMonths: 8,
       breed: 'maine coon',
       picUrl: 'puszek1.jpg',
-      vaccinated: true
+      vaccinated: true,
+      funfact: 'Jego ulubionym instrumentem jest puzon'
     },
     {
       name: 'Mruczek',
       ageMonths: 36,
       breed: 'brytyjczyk',
       picUrl: 'mruczek1.jpg',
-      vaccinated: true
+      vaccinated: true,
+      funfact: 'Sypia na plecach'
     },
     {
       name: 'Kiciek',
       ageMonths: 52,
       breed: 'perski',
       picUrl: 'kiciek.jpg',
-      vaccinated: true
+      vaccinated: true,
+      funfact: "JTak naprawde ma na imie Stefan"
     },
     {
       name: 'Kłaczek',
       ageMonths: 81,
       breed: 'brytyjczyk',
       picUrl: 'klaczek.jpg',
-      vaccinated: true
+      vaccinated: true,
+      funfact: "Potrafi szydelkowac"
     },
     {
       name: 'Pimpuś',
       ageMonths: 6,
       breed: 'dachowiec',
       picUrl: 'pimpus.jpg',
-      vaccinated: false
+      vaccinated: false,
+      funfact: "Jest wspoltworca frameworku Angular"
     }
   ];
 

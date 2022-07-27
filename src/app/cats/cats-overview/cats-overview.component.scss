@@ -3,6 +3,10 @@
   background-color: #fcfacd;
   display: block;
 
+  section {
+    display: flex;
+    flex-direction: column;
+  }
 
   .listElement {
     max-width: 550px;
@@ -13,5 +17,14 @@
   img {
     max-width: 250px;
     max-height: 250px;
+  }
+
+  .sortingButtons {
+    align-self: center;
+  }
+
+  .sortingButton {
+    float:left;
+    margin: 10px;
   }
 }

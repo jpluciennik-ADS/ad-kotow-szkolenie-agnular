@@ -1,4 +1,9 @@
 <section>
+    <div class="sortingButtons">
+        <button mat-raised-button class="sortingButton" (click)="sortByName()">Sortuj po imieniu</button>
+        <button mat-raised-button class="sortingButton" (click)="sortByBreed()">Sortuj po rasie</button>
+    </div>
+
     <div class="listElement" *ngFor="let cat of cats">
         <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)" title="{{cat.funfact}}">
         <!-- <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)" matTooltip="{{cat.funfact}}" matTooltipPosition='right'> -->

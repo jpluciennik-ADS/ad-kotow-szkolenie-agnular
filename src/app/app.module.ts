@@ -13,6 +13,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import 'hammerjs';
 
+import {MatButtonModule} from '@angular/material/button';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -21,7 +23,8 @@ import 'hammerjs';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatButtonModule
   ],
   declarations: [
     AppComponent,

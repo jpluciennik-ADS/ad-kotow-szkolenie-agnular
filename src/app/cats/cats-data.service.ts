@@ -15,7 +15,8 @@ export class CatsDataService {
       breed: 'maine coon',
       picUrl: 'puszek1.jpg',
       vaccinated: true,
-      funfact: 'Jego ulubionym instrumentem jest puzon'
+      funfact: 'Jego ulubionym instrumentem jest puzon',
+      adopted: false
     },
     {
       name: 'Mruczek',
@@ -23,7 +24,8 @@ export class CatsDataService {
       breed: 'brytyjczyk',
       picUrl: 'mruczek1.jpg',
       vaccinated: true,
-      funfact: 'Sypia na plecach'
+      funfact: 'Sypia na plecach',
+      adopted: false
     },
     {
       name: 'Kiciek',
@@ -31,7 +33,8 @@ export class CatsDataService {
       breed: 'perski',
       picUrl: 'kiciek.jpg',
       vaccinated: true,
-      funfact: "JTak naprawde ma na imie Stefan"
+      funfact: "JTak naprawde ma na imie Stefan",
+      adopted: false
     },
     {
       name: 'Kłaczek',
@@ -39,7 +42,8 @@ export class CatsDataService {
       breed: 'brytyjczyk',
       picUrl: 'klaczek.jpg',
       vaccinated: true,
-      funfact: "Potrafi szydelkowac"
+      funfact: "Potrafi szydelkowac",
+      adopted: false
     },
     {
       name: 'Pimpuś',
@@ -47,7 +51,8 @@ export class CatsDataService {
       breed: 'dachowiec',
       picUrl: 'pimpus.jpg',
       vaccinated: false,
-      funfact: "Jest wspoltworca frameworku Angular"
+      funfact: "Jest wspoltworca frameworku Angular",
+      adopted: false
     }
   ];
 

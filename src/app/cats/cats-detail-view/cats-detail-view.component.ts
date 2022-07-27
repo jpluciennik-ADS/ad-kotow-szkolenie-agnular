@@ -28,8 +28,13 @@ export class CatsDetailViewComponent implements OnInit {
     this.adoptionFormActive = true;
   }
 
+  adopt() {
+      this.cat.adopted = true;
+  }
+
   onFormClose(success: boolean) {
     this.adoptionFormActive = false;
     this.showConfirmMsg = success;
+    this.adopt();
   }
 }

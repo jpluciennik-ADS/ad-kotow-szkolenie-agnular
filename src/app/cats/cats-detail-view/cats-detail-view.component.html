@@ -1,6 +1,8 @@
 <section>
     <div class="side-by-side">
-        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="">
+        <button class="galleryBtn" (click)="prevPic()"><</button>
+        <img src="./assets/cats-pic/{{cat.picUrls[picIndex]}}" alt="">
+        <button class="galleryBtn" (click)="nextPic()">></button>
         <div class="cols">
             <span class="cats-name">{{cat.name}}</span>
             <span>{{cat.ageMonths}} miesięcy</span>

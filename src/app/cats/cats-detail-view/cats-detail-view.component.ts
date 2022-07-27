@@ -18,6 +18,7 @@ export class CatsDetailViewComponent implements OnInit {
   adoptionFormActive: boolean;
   showConfirmMsg: boolean;
   private route: ActivatedRouteSnapshot;
+  picIndex: number = 0;
 
   ngOnInit(): void {
     const catName = this.route.params['catName'];
@@ -28,8 +29,27 @@ export class CatsDetailViewComponent implements OnInit {
     this.adoptionFormActive = true;
   }
 
+  adopt() {
+      this.cat.adopted = true;
+  }
+
+  nextPic() {
+    this.picIndex++;
+    if (this.picIndex > this.cat.picUrls.length - 1) {
+      this.picIndex = 0;
+    }
+  }
+
+  prevPic() {
+    this.picIndex--;
+    if (this.picIndex < 0) {
+      this.picIndex = this.cat.picUrls.length - 1;
+    }
+  }
+
   onFormClose(success: boolean) {
     this.adoptionFormActive = false;
     this.showConfirmMsg = success;
+    this.adopt();
   }
 }

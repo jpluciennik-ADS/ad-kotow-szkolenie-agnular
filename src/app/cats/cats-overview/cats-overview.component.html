@@ -1,6 +1,20 @@
 <section>
+    <div class="sortingButtons">
+        <button mat-raised-button class="sortingButton" (click)="sortByName()">Sortuj po imieniu</button>
+        <button mat-raised-button class="sortingButton" (click)="sortByBreed()">Sortuj po rasie</button>
+    </div>
+
     <div class="listElement" *ngFor="let cat of cats">
-        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)">
+        <div [ngSwitch]="cat.adopted">
+            <div *ngSwitchCase = "false">
+                <img id="notAdopted" src="./assets/cats-pic/{{cat.picUrls[0]}}" alt="Picture of a {{cat.name}}" (click)="onClick(cat)" title="{{cat.funfact}}">
+                 <!-- <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)" matTooltip="{{cat.funfact}}" matTooltipPosition='right'> -->
+            </div>
+            <div *ngSwitchCase = "true">
+                <img id="adopted" src="./assets/cats-pic/{{cat.picUrls[0]}}" alt="Picture of a {{cat.name}}" (click)="onClick(cat)" title="{{cat.funfact}}">
+                 <!-- <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)" matTooltip="{{cat.funfact}}" matTooltipPosition='right'> -->
+            </div>
+        </div>
         <span>{{cat.name}}</span>
     </div>
 </section>
